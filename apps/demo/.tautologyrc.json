@@ -1,0 +1,23 @@
+{
+  "include": ["svc.**", "repo.**", "email.**"],
+  "exclude": ["node_modules/**"],
+  "overrides": {},
+  "serialization": {
+    "defaultSizeThreshold": 16384,
+    "defaultMaxDepth": 8,
+    "alwaysFullTypes": [],
+    "neverSerializeTypes": []
+  },
+  "pathSignature": {
+    "maxDepth": 10,
+    "collapseRecursion": true,
+    "collapseLoops": true,
+    "includeComponentTypes": true,
+    "ignoredComponents": []
+  },
+  "storage": {
+    "outputDir": ".tautology/traces",
+    "memoryBufferSize": 100,
+    "flushOnExit": true
+  }
+}

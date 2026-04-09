@@ -1,20 +1,11 @@
 {
-  "name": "@tautology/cli",
+  "name": "@tautology/demo",
   "version": "0.1.0",
+  "private": true,
   "type": "module",
-  "bin": {
-    "tautology": "./dist/index.js"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
-  "files": ["dist"],
   "scripts": {
-    "build": "tsc --build",
-    "test": "vitest run"
+    "start": "node --import @tautology/instrument/register dist/scenarios.js",
+    "build": "tsc --build"
   },
   "dependencies": {
     "@tautology/core": "0.1.0",
