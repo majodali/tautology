@@ -1,0 +1,29 @@
+{
+  "name": "@tautology/instrument",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./register": {
+      "types": "./dist/loader/register.d.ts",
+      "import": "./dist/loader/register.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc --build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@tautology/core": "0.1.0",
+    "@tautology/serialize": "0.1.0",
+    "@tautology/collector": "0.1.0",
+    "picomatch": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/picomatch": "^3.0.0"
+  }
+}
